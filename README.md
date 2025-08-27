@@ -9,6 +9,8 @@ Think of testing an AI's safety like securing a building:
 
 This dual-headed approach allows HydraProbe to uncover critical vulnerabilities related to agentic sabotage, covert data exfiltration, and deceptive alignment.
 
+<img width="600" height="697" alt="HydraProbe" src="https://github.com/user-attachments/assets/0c4238dc-1d89-4fe5-b424-aaf51942af13" />
+
 ## The Two Heads of the Hydra
 
 HydraProbe combines two powerful, automated attack methods:
@@ -142,3 +144,4 @@ python pivotingattack_red_team_orchestrator.py
 Acknowledgements
 
 This framework was developed for the OpenAI Red‑Teaming Challenge (gpt-oss-20b). It is intended for security research and to help build safer, more robust AI systems.
+
