@@ -1,0 +1,31 @@
+# Pin NumPy to a stable 1.x version to ensure compatibility
+numpy==1.26.4
+
+# Core AI and ML Libraries
+transformers==4.41.2
+scipy==1.13.0
+scikit-learn==1.4.2
+openai==1.35.3
+accelerate
+sentencepiece
+protobuf
+
+# Pin NumPy to a stable 1.x version to ensure compatibility
+numpy==1.26.4
+
+# Core AI and ML Libraries
+transformers==4.41.2
+scipy==1.13.0
+openai==1.35.3
+
+# The key library for reading GGUF model files
+llama-cpp-python==0.2.76
+
+#python -m venv redteam_env
+#.\redteam_env\Scripts\activate
+#pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+#pip install -r requirements.txt
+#python embedding_space_attack.py
+
+
+httpx==0.27.0
