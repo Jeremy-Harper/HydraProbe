@@ -75,3 +75,70 @@ This framework has been tested on a Kaggle Notebook with a T4 x2 GPU. An NVIDIA 
 ```bash
 git clone https://github.com/Jeremy-Harper/HydraProbe.git
 cd HydraProbe
+```
+
+  
+
+**2. Set Up a Python Environment**
+
+ ```bash
+# Create and activate the virtual environment
+python -m venv hydra_env
+
+# On Windows:
+.\hydra_env\Scripts\activate
+
+# On Linux/macOS:
+source hydra_env/bin/activate
+```
+  
+
+**3. Install Dependencies**
+```bash
+
+    
+# First, install PyTorch with CUDA support for GPU acceleration
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+# Then, install the rest of the packages
+pip install -r requirements.txt
+```
+  
+
+**4. Download NLTK Data**
+```bash    
+# Run this in a Python shell
+import nltk
+nltk.download('words')
+```
+  
+
+How to Run
+
+Before running, make sure your local LLM server (like Ollama or LM Studio) is running with the gpt-oss-20b model loaded and accessible at http://localhost:1234/v1.
+1. Run the Semantic Locksmith
+
+This tool finds "decoy" words to bypass content filters.
+
+
+python embedding_space_attack.py
+
+  
+
+    Output: Successful bypasses are logged to successful_decoy_attacks_report.txt.
+
+2. Run the Social Engineer
+
+This agent executes complex, multi-stage conversational attacks.
+
+
+    
+python pivotingattack_red_team_orchestrator.py
+
+  
+
+    Output: For each successful attack, a competition-compliant finding_X.json file is generated.
+
+Acknowledgements
+
+This framework was developed for the OpenAI Red‑Teaming Challenge (gpt-oss-20b). It is intended for security research and to help build safer, more robust AI systems.
